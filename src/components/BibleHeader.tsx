@@ -1,11 +1,15 @@
-import { Cross } from "lucide-react";
+import Logo from "../assets/Logo.jpeg";
 
 const BibleHeader = () => {
   return (
     <header className="text-center py-8 md:py-12 relative">
-      {/* Subtle cross icon */}
+      {/* Logo in circular shape */}
       <div className="flex justify-center mb-4">
-        <Cross className="w-10 h-10 text-gold opacity-60" strokeWidth={1.5} />
+        <img
+          src={Logo}
+          alt="Logo"
+          className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-gold shadow-md"
+        />
       </div>
 
       {/* Title */}
